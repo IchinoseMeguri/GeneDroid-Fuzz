@@ -167,13 +167,7 @@ if __name__ == "__main__":
     print("-----------------")
     print("cv2 version: ", cv2.__version__)
     print("-----------------")
-    image1=cv2.imread("D:\Files\Works\Works\droidbot\out_bili_0512\intent_tset\screen_2024-05-13_145222.png")
-
-    i_list = [145226,145230,145234,145238,145241,145245,145249,145253,145257]
-    for i in i_list:
-        image2=cv2.imread("D:\Files\Works\Works\droidbot\out_bili_0512\intent_tset\screen_2024-05-13_"+str(i)+".png")
-        image_similarity = ImageSimilarity(image1, image2)
-        print(image_similarity.histogram_cosine_similarity())
+    
     
 
     
